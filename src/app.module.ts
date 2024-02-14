@@ -10,11 +10,11 @@ import { AdminsModule } from './admins/admins.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'your_host',
+      host: '127.0.0.1',
       port: 3306,
-      username: 'your_name',
-      password: 'your_pass',
-      database: 'your_db',
+      username: 'root',
+      password: 'pass123!',
+      database: 'test',
       entities: [User, Admin],
       migrations: ['dist/migrations/*{.ts,.js}'],
       migrationsTableName: 'migrations_typeorm',
